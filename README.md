@@ -1,3 +1,35 @@
+# report
+Repositori ini merupakan implementasi analisis sentimen menggunakan Support Vector Machine (SVM) dengan data ulasan film. Model yang telah dilatih kemudian di-deploy melalui API berbasis Flask.
+
+---
+
+## Teknologi
+
+- Python
+- Scikit-learn
+- Pandas
+- Flask
+- Pickle
+
+---
+
+## Cara Kerja
+
+### 1. **Training Model (`svm_linear.py`)**
+- Menggunakan dataset dari Cornell Movie Review Polarity v2.0.
+- TF-IDF digunakan untuk ekstraksi fitur.
+- Model dilatih dengan SVM (kernel linear).
+- Evaluasi menggunakan `classification_report`.
+
+### 2. **Menyimpan Model (`pickling.py`)**
+- Menyimpan `vectorizer` dan `classifier_linear` ke file `.sav` menggunakan `pickle`.
+
+### 3. **API untuk Prediksi (`classifier_flask.py`)**
+- Menggunakan Flask untuk menyediakan endpoint `/sentiment`.
+- Menerima teks via parameter `text`.
+- Mengembalikan hasil prediksi sentimen (`positive` atau `negative`).
+
+Contoh penggunaan API (GET):
 
 ---
 # SVM_sentiment_analysis
