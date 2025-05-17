@@ -29,7 +29,6 @@ Repositori ini merupakan implementasi analisis sentimen menggunakan Support Vect
 - Menerima teks via parameter `text`.
 - Mengembalikan hasil prediksi sentimen (`positive` atau `negative`).
 
-Contoh penggunaan API (GET):
 
 ---
 # SVM_sentiment_analysis
